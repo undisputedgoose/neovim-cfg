@@ -28,7 +28,6 @@ call plug#begin('~/.config/nvim/plugged')
 
 Plug 'jacoborus/tender.vim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'tpope/vim-fugitive'
 Plug 'itchyny/lightline.vim'
 Plug 'vim-syntastic/syntastic'
 Plug 'neovimhaskell/haskell-vim'
@@ -52,9 +51,6 @@ require'nvim-treesitter.configs'.setup {
 }
 
 EOF
-
-" fugitive stuff
-nnoremap <leader>g :G <CR>
 
 " lightline stuff
 let g:lightline = {
